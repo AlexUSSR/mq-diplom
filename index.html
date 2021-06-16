@@ -8,30 +8,30 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-  <div class="container">
+  <header>
+     <div class="container">
 
-    <div class="container-header">
-      <div class="logo">
-        <a href="#0">
-          <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="noemi"></a>
-      </div>
-      <nav class="menu">
-        <ul class="menu-list font-regular">
-          <li class="menu-list-item"><a href="#0">главная</a></li>
-          <li class="menu-list-item"><a href="#0">посты</a></li>
-          <li class="menu-list-item"><a href="#0">статьи</a></li>
-          <li class="menu-list-item"><a href="#0">теги</a></li>
-          <li class="menu-list-item"><a href="#0">темы</a></li>
-          <li class="menu-list-item"><a href="#0">контакты</a></li>
-        </ul>
-      </nav>
+     <div class="container-header">
+       <div class="logo">
+         <a href="#0">
+         <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="noemi"></a>
+       </div>
+       <nav class="menu">
+         <ul class="menu-list font-regular">
+           <li class="menu-list-item"><a href="#0">главная</a></li>
+           <li class="menu-list-item"><a href="#0">посты</a></li>
+           <li class="menu-list-item"><a href="#0">статьи</a></li>
+           <li class="menu-list-item"><a href="#0">теги</a></li>
+           <li class="menu-list-item"><a href="#0">темы</a></li>
+           <li class="menu-list-item"><a href="#0">контакты</a></li>
+         </ul>
+       </nav>
+     </div>
+     <h1 class="header-title font-bold">блог о творчестве, спорте, и образе жизни</h1>
     </div>
-    <h1 class="header-title font-bold">блог о творчестве, спорте, и образе жизни</h1>
-  </div>
-</header>
+  </header>
 
-<section class="trend">
+  <section class="trend">
 	<h2 class="now-in-trend centered font-bold">сейчас в тренде</h2>
   <div class="trend-items">
 
@@ -362,63 +362,90 @@
   <div class="products-items">
     <article class="product-item">
       
-      <picture class="product-picture">
+      <picture class="product-img">
         <source 
         media="(max-width: 640px)"
-        srcset="(../../mq-diplom/images/shop-item-mobile1.jpg, ../../mq-diplom/images/shop-item-mobile1.jpg 2x)">
+        srcset="(./images/shop-item-mobile1.jpg, ./images/shop-item-mobile1.jpg 2x)">
         <source 
         media="(max-width: 1199px)"
-        srcset="(../../mq-diplom/images/shop-item-tablet1.jpg, ../../mq-diplom/images/shop-item-tablet1.jpg 2x)">
+        srcset="(./images/shop-item-tablet1.jpg, ./images/shop-item-tablet1.jpg 2x)">
         <source 
         media="(min-width: 1200px)"
-        srcset="(../../mq-diplom/images/shop-item-desk1.jpg, ../../mq-diplom/images/shop-item-desk1.jpg 2x)">
-        <img class="product-img" 
-             src="../../mq-diplom/images/shop-item-desk1.jpg"
+        srcset="(./images/shop-item-desk1.jpg, ./images/shop-item-desk1.jpg 2x)">
+        <img src="./images/shop-item-desk1.jpg"
              alt="подушки на диван">
       </picture>
       
         <h2 class="title-product font-bold">подушки на диван</h2>
         <p>Набор из двух подушек с модными принтами. Видео о создании <a>здесь</a>.</p>
-    
+
+        <div class="shop">
+          <div class="price">
+            <div class="price-old font-bold">1000 ₽</div>
+            <div class="price-new font-bold">800 ₽</div>
+          </div>
+          <form class="form-b">
+            <button type="button" class="in-shop font-bold">в магазин<span class="invisible-text">кнопка в магазин</span></button>
+          </form>
+        </div>
 
     </article>
     <article class="product-item">
-      <picture class="product-picture">
+      <picture class="product-img">
         <source 
         media="(max-width: 640px)"
-        srcset="(../../mq-diplom/images/shop-item-mobile2.jpg, ../../mq-diplom/images/shop-item-mobile2.jpg 2x)">
+        srcset="(./images/shop-item-mobile2.jpg, ./images/shop-item-mobile2.jpg 2x)">
         <source 
         media="(max-width: 1199px)"
-        srcset="(../../mq-diplom/images/shop-item-tablet2.jpg, ../../mq-diplom/images/shop-item-tablet2.jpg 2x)">
+        srcset="(./images/shop-item-tablet2.jpg, ./images/shop-item-tablet2.jpg 2x)">
         <source 
         media="(min-width: 1200px)"
-        srcset="(../../mq-diplom/images/shop-item-desk2.jpg, ../../mq-diplom/images/shop-item-desk2.jpg 2x)">
-        <img  src="../../mq-diplom/images/shop-item-desk2.jpg"
+        srcset="(./images/shop-item-desk2.jpg, ./images/shop-item-desk2.jpg 2x)">
+        <img  src="./images/shop-item-desk2.jpg"
               alt="кукла зайчик">
       </picture>
       
         <h2 class="title-product font-bold">кукла "зайчик"</h2>
         <p>Интересная рукодельная кукла "Зайчик", созданию которой посвящена <a>весенняя серия постов</a> в блоке и несколько подкастов.</p>
+
+        <div class="shop">
+          <div class="price">
+            <div class="price-new font-bold">3500 ₽</div>
+          </div>
+          <form class="form-b">
+            <button type="button" class="in-shop font-bold">в магазин<span class="invisible-text">кнопка в магазин</span></button>
+          </form>
+        </div>
       
     </article>
 
     <article class="product-item">
-      <picture class="product-picture">
+      <picture class="product-img">
         <source 
         media="(max-width: 640px)"
-        srcset="(../../mq-diplom/images/shop-item-mobile3.jpg, ../../mq-diplom/images/shop-item-mobile3.jpg 2x)">
+        srcset="(./images/shop-item-mobile3.jpg, ./images/shop-item-mobile3.jpg 2x)">
         <source 
         media="(max-width: 1199px)"
-        srcset="(../../mq-diplom/images/shop-item-tablet3.jpg, ../../mq-diplom/images/shop-item-tablet3.jpg 2x)">
+        srcset="(./images/shop-item-tablet3.jpg, ./images/shop-item-tablet3.jpg 2x)">
         <source 
         media="(min-width: 1200px)"
-        srcset="(../../mq-diplom/images/shop-item-desk3.jpg, ../../mq-diplom/images/shop-item-desk3.jpg 2x)">
+        srcset="(./images/shop-item-desk3.jpg, ./images/shop-item-desk3.jpg 2x)">
         <img  src="../../mq-diplom/images/shop-item-desk3.jpg"
               alt="шестиугольная рамка">
       </picture>
       
       <h2 class="title-product font-bold">шестиугольная рамка</h2>
       <p>Необычная рамка для украшения дома из видео <a>"Как сделать рамку из подручных средств за 30 минут"</a>.</p>
+
+      <div class="shop">
+          <div class="price">
+            <div class="price-old font-bold">500 ₽</div>
+            <div class="price-new font-bold">400 ₽</div>
+          </div>
+          <form class="form-b">
+            <button type="button" class="in-shop font-bold">в магазин<span class="invisible-text">кнопка в магазин</span></button>
+          </form>
+        </div>
       
     </article>
   </div>
@@ -440,3 +467,4 @@
     </div>
   </div>
 </footer>
+</body>

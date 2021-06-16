@@ -6,14 +6,14 @@
 
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url(../mq-diplom/fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url(../mq-diplom/fonts/OpenSans-Regular.ttf);
+  src: url(../fonts/OpenSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
@@ -56,7 +56,7 @@ header::after {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 10px;
 }
@@ -71,7 +71,7 @@ header::after {
 .logo {
   display: block;
   position: relative;
-  width: 180px;
+  width: 15%;
   margin-left: 5px;
   margin-top: 17px;
   z-index: 3;
@@ -102,7 +102,7 @@ a {
 .header-title {
   display: block;
   position: relative;
-  width: 720px;
+  width: 60%;
   text-align: center;
   margin-top: 100px;
   margin-left: auto;
@@ -132,7 +132,7 @@ a {
   content: "";
   display: block;
   border: 2px solid #b59f5b;
-  width: 67px;
+  width: 5.58%;
   margin: 9px auto 30px;
 }
 
@@ -169,20 +169,20 @@ a {
 }
 
 .img-1-1 {
-  background-image: url(../../mq-diplom/images/trend1.jpg);
+  background-image: url(../images/trend1.jpg);
   
 }
 
 .img-1-2 {
-  background-image: url(../../mq-diplom/images/trend2.jpg);
+  background-image: url(../images/trend2.jpg);
 }
 
 .img-1-3 {
-  background-image: url(../../mq-diplom/images/trend3.jpg);
+  background-image: url(../images/trend3.jpg);
 }
 
 .img-1-4 {
-  background-image: url(../../mq-diplom/images/trend4.jpg);
+  background-image: url(../images/trend4.jpg);
 }
 
 .trend-item {
@@ -217,7 +217,7 @@ a {
   
 
 .blog {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   padding: 64px 15px 60px 15px;
@@ -230,9 +230,13 @@ a {
   flex-wrap: nowrap;
 }
 
+.main {
+  width: 65%;
+}
+
 .article {
   display: flex;
-  width: 780px;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -242,13 +246,13 @@ a {
 
 .picture {
   box-sizing: border-box;
-  width: 380px;
+  width: 48.7%;
   height: 300px;
 }
 
 .post-info {
   box-sizing: border-box;
-  width: 370px;
+  width: 47.4%;
   margin-top: -7px;
 }
 
@@ -403,7 +407,8 @@ p {
   outline: 2px solid #b59f5b;
 }
 
-.submit {
+.submit,
+.in-shop {
   box-sizing: border-box;
   width: 100%;
   border: none;
@@ -462,13 +467,11 @@ p {
   color: #000000;
 }
 
-
+/* НАШИ ПРОДУКТЫ */
 
 .products {
   width: 100%;
   margin-bottom: 60px;
-  border: 1px solid red;
-
 }
 
 .our-products {
@@ -482,7 +485,7 @@ p {
   content: "";
   display: block;
   border: 2px solid #b59f5b;
-  width: 67px;
+  width: 5.58%;
   margin-top: 9px;
   margin-left: auto;
   margin-right: auto;
@@ -494,7 +497,6 @@ p {
   flex-wrap: nowrap;
   width: 100%;
   justify-content: space-around;
-  border: 1px solid green;
 }
 
 .product-item {
@@ -503,27 +505,55 @@ p {
   width: 25%;
   max-height: 100%;
   border: 3px solid #b59f5b;
-  padding: 0 22px 25px;
+  padding: 0px;
 }
 
 .product-item a {
   color: #b59f5b;
 }
 
-.product-picture {
+.product-img {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
 }
 
 .title-product {
   text-transform: uppercase;
 }
 
+.shop {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.price {
+  margin: 30px 0 0 0;
+}
+
+.price-old {
+  font-size: 14px;
+  text-decoration: line-through;
+  font-weight: 700;
+  color: #0f0d0e;
+}
+
+.price-new {
+  font-size: 20px;
+  color: #0f0d0e;
+  font-weight: 700;
+}
+
+.form-b {
+  display: flex;
+  width: 50%;
+}
+
+/* FOOTER */
 
 .footer {
-  width: 1200px;
+  width: 100vw;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -580,7 +610,7 @@ span.invisible-text {
 }
 
 .copyright-footer {
-  width: 1200px;
+  width: 100vw;
   height: 127px;
   padding-top: 68px;
   text-align: center;
